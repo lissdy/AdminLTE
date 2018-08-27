@@ -3,30 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Exe Chain | Dashboard</title>
+  <title>Ex Chain | Dashboard</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
-  <!-- Morris chart -->
-  <link rel="stylesheet" href="bower_components/morris.js/morris.css">
-  <!-- jvectormap -->
-  <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
-  <!-- Date Picker -->
-  <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
-  <!-- Daterange picker -->
-  <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
-  <!-- bootstrap wysihtml5 - text editor -->
-  <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+  <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -45,9 +35,9 @@
     <!-- Logo -->
     <a href="exeChainAdmin.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>E</b>XE</span>
+      <span class="logo-mini"><b>E</b>X</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>EXE</b>CHAIN</span>
+      <span class="logo-lg"><b>EX</b>CHAIN</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -61,13 +51,13 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <img src="../../dist/img/lisa-160.png" class="user-image" alt="User Image">
               <span class="hidden-xs">Lisa Li</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="../../dist/img/lisa-160.png" class="img-circle" alt="User Image">
 
                 <p>
                   SuccessFactors - Developer
@@ -101,8 +91,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/tables/tickets.html"><i class="fa fa-circle-o"></i> Tickets</a></li>
-            <li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Credits</a></li>
+            <li><a href="../../ExChain.html"><i class="fa fa-circle-o"></i> Tickets</a></li>
+            <li class="active"><a href="list.html"><i class="fa fa-circle-o"></i> Credits</a></li>
           </ul>
         </li>
       </ul>
@@ -111,30 +101,68 @@
   </aside>
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <h1>
-        Assets
-        <small>Tickets</small>
-      </h1>
-    </section>
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <h1>
+          Assets
+          <small>Credits</small>
+        </h1>
+      </section>
 
-    <!-- Main content -->
-    <section class="content">
-
-
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-  <footer class="main-footer">
-    <div class="pull-right hidden-xs">
-      <b>Version</b> 0.0.1
+      <!-- Main content -->
+      <section class="content">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="box">
+              <div class="box-header">
+                <h3 class="box-title">Credits</h3>
+              </div>
+              <!-- /.box-header -->
+              <div class="box-body">
+                <table id="example1" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th>TicketID</th>
+                    <th>Value</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td><a href="../tickets/detail.html">TK9842</a></td>
+                    <td>30</td>
+                  </tr>
+                  <tr>
+                    <td><a href="../tickets/detail-taken.html">TK1848</a></td>
+                    <td>-20</td>
+                  </tr>
+                  <tfoot>
+                  <tr>
+                    <th>Balance</th>
+                    <th>10</th>
+                  </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+          </div>
+          <!-- /.col -->
+        </div>
+      </section>
+      <!-- /.content -->
     </div>
-    <strong>Copyright &copy; 2018 <a href="https://adminlte.io">SAP Labs</a>.</strong> All rights
-    reserved.
-  </footer>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+      <div class="pull-right hidden-xs">
+        <b>Version</b> 0.0.1
+      </div>
+      <strong>Copyright © 2018 <a href="https://adminlte.io">SAP Labs</a>.</strong> All rights
+      reserved.
+    </footer>
+  </div>
+
 </div>
 <!-- ./wrapper -->
 
@@ -146,5 +174,16 @@
 <script>
   $.widget.bridge('uibutton', $.ui.button);
 </script>
+
+<!-- jQuery 3 -->
+<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="../../bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+</body>
+</html>
